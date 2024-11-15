@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Container for the form */
+.container {
+    background-color: #b74b4b;
+    padding: 2rem;
+    max-width: 400px; /* Reduced width for a squarer shape */
+    width: 90%; /* Responsive width */
+    height: 450px; /* Fixed height for square shape */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 100px; /* Adjust for header space */
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #020202;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #b74b4b;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #000000, #ffffff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Popup base style */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none; /* Hide by default */
+    width: 300px;
+}
+
+.popup img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.popup h2 {
+    color: #b74b4b;
+    margin-bottom: 15px;
+}
+
+.popup button {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #000000, #ffffff);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Show popup when open-popup class is added */
+.open-popup {
+    display: block;
+}

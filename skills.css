@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    background-color: #f1f1f1;
+    margin: 10px 0;
+}
+
+.skills {
+    padding: 10px;
+    color: white;
+    text-align: right;
+}
+
+.html { width: 90%; background-color: #4CAF50; }
+.css { width: 80%; background-color: #2196F3; }
+.javascript { width: 65%; background-color: #ff9800; }
+.php { width: 60%; background-color: #e91e63; }
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
